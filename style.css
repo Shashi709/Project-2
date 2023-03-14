@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+}
+body{
+ /* background-image: url(./assets/img1.png); */
+ background: linear-gradient(rgba(0, 0, 0, 0.7)50%,rgba(0, 0, 0, 0.7)50%) ,url(./assets/img1.png);
+ background-position: center;
+ background-size: cover;
+ height: 100vh;
+
+}
+
+/* ------------------------------ /* 
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+nav{
+  /* background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%); */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px ;
+
+}
+.list{
+  color: #ffffff;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.list-item:hover
+{
+  border: 2px solid #E8BD0D;
+  transition: 0.5s;
+  background-color: transparent;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.logo{
+  width: 130px;
+  margin-left: 35px;
+  
+}
+.fist-btn{
+  margin-right: 40px;
+}
+.button button{
+  font-size: 20px;
+  padding: 8px;
+  width: 150px;
+  background-color: #FF6263;
+  color: #ffffff;
+  border: none;
+  transition: 0.5s;
+  border-radius: 10px;
+
+}
+.button button:hover{
+  background: transparent;
+  color: #E8BD0D;
+  border: 2px solid #E8BD0D;
+  transition: 0.5s;
+  background-color: transparent;
+}
+
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+.hero{
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+.hero-heading{
+  font-size: 45px;
+  color: #E8BD0D;
+  
+}
+
+.second-btn{
+  margin-top: 30px;
+}
+.bottom{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+.bottom div{
+  margin-right: 30px;
+}
+
+
+
+@media screen and (max-width:800px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+  }
+  .list-item{
+    margin: 20px auto;
+  }
+  .fist-btn{
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .hero-heading{
+    font-size: 35px;
+    color: #E8BD0D;
+    
+  }
+  .button button{
+    font-size: 20px;
+    padding: 6px;
+    width: 100px;
+    background-color: #FF6263;
+    color: #ffffff;
+    border: none;
+    transition: 0.5s;
+    border-radius: 10px;
+  
+  }
+
+}
+
+@media screen and (max-width:380px){
+  
+  .logo{
+    width: 80px;
+  }
+  .list-item{
+   font-size: 15px
+  }
+  .fist-btn{
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .hero-heading{
+    font-size: 25px;
+    color: #E8BD0D;
+    
+  }
+  
+  
+  .bottom-size{
+    width: 100px;
+  }
+
+}
